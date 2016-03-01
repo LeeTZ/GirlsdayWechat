@@ -52,7 +52,7 @@ $(function(){
         $(".main").fadeIn(300,function(){
             setTimeout(function(){
                 $('.longpage').show();
-                document.title='亿万富豪红包群（20）';
+                //document.title='亿万富豪红包群（20）';
                 //setTimeout(function(){
                 //    motionObj['page'+1].play();
                 //},1000)
