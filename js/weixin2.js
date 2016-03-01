@@ -2,8 +2,8 @@ var baseUrl = "http://bbs.cgtblog.com/cgtblog/fuhao/";
 var wxdata = {
  link: baseUrl+"index.html",   //分享出去后落地页的链接
  icon: baseUrl+"images/share.jpg",  //分享出去时的ICON 180*180的尺寸
- title: '马云邀请你加入群聊',   //分享出去时文案标题
- desc: '马云邀请你加入群聊亿万富豪红包群，进入查看详情。',
+ title: '李铁峥邀请你加入群聊',   //分享出去时文案标题
+ desc: '李铁峥邀请你加入群聊又是SY11女生节！，进入查看详情。',
  success:function(){
 	 _hmt.push(['_trackEvent','share_succ','click']);
  },
