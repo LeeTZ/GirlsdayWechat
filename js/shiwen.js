@@ -131,7 +131,7 @@ $(function(){
                 TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':dist-150+_space+'px'},ease:Linear.easeNone});
                 dist += -260+_space;
                 _DIST = dist;
-            }else if(msgID>4){
+            }else if(msgID>3){
                 TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':dist+50+'px'},ease:Linear.easeNone});
                 dist += -150;
                 _DIST = dist;   

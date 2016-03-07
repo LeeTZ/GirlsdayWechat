@@ -105,7 +105,7 @@ $(function(){
         msgID=1;
         //dist = -150+_space;
         dist = -150;
-        _timer = setInterval(setMS1,2000)
+        _timer = setInterval(setMS1,4000)
     }
 
     //显示消息2
@@ -129,11 +129,11 @@ $(function(){
             if(msgID==8){
                 console.log(_space)
                 TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':dist-150+_space+'px'},ease:Linear.easeNone});
-                dist += -260+_space;
+                dist += -210+_space;
                 _DIST = dist;
-            }else if(msgID>4){
-                TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':dist+50+'px'},ease:Linear.easeNone});
-                dist += -300;
+            }else if(msgID>3){
+                TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':dist-10+'px'},ease:Linear.easeNone});
+                dist += -220;
                 _DIST = dist;   
             }
             if(msgID==8) receiveMoney();
@@ -152,10 +152,10 @@ $(function(){
             if(msgID != 13){
                 dist += -40;
                 TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':_DIST+dist+'px'},ease:Linear.easeNone});
-                dist += -180;    
+                dist += -120;    
             }else {
                 TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':_DIST+dist-150+'px'},ease:Linear.easeNone});
-                dist += -180;   
+                dist += -120;   
             }
             
             
