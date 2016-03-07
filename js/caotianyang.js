@@ -133,7 +133,7 @@ $(function(){
                 _DIST = dist;
             }else if(msgID>3){
                 TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':dist+50+'px'},ease:Linear.easeNone});
-                dist += -150;
+                dist += -120;
                 _DIST = dist;   
             }
             if(msgID==8) receiveMoney();
@@ -152,10 +152,10 @@ $(function(){
             if(msgID != 12){
                 dist += -40;
                 TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':_DIST+dist+'px'},ease:Linear.easeNone});
-                dist += -180;    
+                dist += -120;    
             }else {
-                TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':_DIST+dist-150+'px'},ease:Linear.easeNone});
-                dist += -180;   
+                TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':_DIST+dist-120+'px'},ease:Linear.easeNone});
+                dist += -120;   
             }
             
             
