@@ -9,10 +9,10 @@ $(function(){
     $('html,body').on(touchmove,function(e){
         e.preventDefault()
     });
-	
-	_mz_wx_view (1);//秒针检测
-	
-	
+    
+    _mz_wx_view (1);//秒针检测
+    
+    
     var motionObj = {};
     var loadingPath='images/';
     var stageH=$(window).height();
@@ -230,8 +230,8 @@ $(function(){
         $('#redpick1, #msg8 .hand').one(touchstart, function(){
             $('#msg8 .circle').css({'animation':'none','-webkit-animation':'none'});
             $('#msg8 .circle,#msg8 .hand').fadeOut();
-			_mz_wx_view (2);
-			_mz_wx_custom(1); 
+            _mz_wx_view (2);
+            _mz_wx_custom(1); 
             if(isTheFirstReceive){
                 if(ct){
                     $('.hongbao,#hb1').show();
@@ -251,8 +251,8 @@ $(function(){
     $('#btn2').on(touchstart, function(){
         if(_btn2==1){
             if(canRemoveMoney){
-				_mz_wx_view (3);//第一个红包派完页
-				_mz_wx_custom(2); 
+                _mz_wx_view (3);//第一个红包派完页
+                _mz_wx_custom(2); 
                 $('#hb1Open,#btn3').show();
                 $('#hb1').hide();
                 TweenMax.to('#hb1',{scale:0.5, alpha:0});
@@ -268,8 +268,8 @@ $(function(){
                 alert('已经拆过红包了');
             }
         }else{
-			_mz_wx_view (6);//final红包
-			_mz_wx_custom(5); 
+            _mz_wx_view (6);//final红包
+            _mz_wx_custom(5); 
             $ ('#chaticons').hide();
             $('.hbnull').css('transform','scale('+stageW/640+','+stageH/1039+')');
             $('.hbnull').css('-webkit-transform','scale('+stageW/640+','+stageH/1039+')');
@@ -287,8 +287,8 @@ $(function(){
     $('#btn3').on(touchstart, function(){
         $('.hbnull,#null1').show();
         $('#hb1Open').hide();
-		_mz_wx_view (4);//第一个红包看手气页
-		_mz_wx_custom(3); 
+        _mz_wx_view (4);//第一个红包看手气页
+        _mz_wx_custom(3); 
         setTimeout(function(){
             $('#hbnull .circle').show();
             $('#hbnull .hand').show();
@@ -363,25 +363,25 @@ $(function(){
     //打开CEO的红包
     $('#redpick2, #msg13 .hand').on(touchstart, function(){
         $('.hongbao,#hb2').show();
-		_mz_wx_view (5);//打开CEO红包
-		_mz_wx_custom(4); 
+        _mz_wx_view (5);//打开CEO红包
+        _mz_wx_custom(4); 
         TweenMax.to('#hb2',.5, {alpha:1, scale:1, ease:Bounce.easeOut});
     })
 
     function goshare(){
         /*$('#btn4,#btn5').show();
         $('#btn4').on(touchstart, function(){
-			_mz_wx_custom(6); 
+            _mz_wx_custom(6); 
 
-			setTimeout(function(){
-				
-				location.href='http://leetz.github.io/GirlsdayWechat';
-				
-				},500); 
+            setTimeout(function(){
+                
+                location.href='http://leetz.github.io/GirlsdayWechat';
+                
+                },500); 
             
         });
         $('#btn5').on(touchstart, function(){
-						_mz_wx_custom(7); 
+                        _mz_wx_custom(7); 
 
             $('.sharepop').fadeIn(300,function(){
                 setTimeout(function(){
