@@ -105,7 +105,7 @@ $(function(){
         msgID=1;
         //dist = -150+_space;
         dist = -150;
-        _timer = setInterval(setMS1,4000)
+        _timer = setInterval(setMS1,4500)
     }
 
     //显示消息2
@@ -115,7 +115,7 @@ $(function(){
         dist = 0;
         //dist = _space;
         clearInterval(_timer);
-        _timer = setInterval(setMS2,2000)
+        _timer = setInterval(setMS2,3000)
     }
 
     //播放消息声音
@@ -212,6 +212,7 @@ $(function(){
             //if(msgID==9) msgID =msgID+1;
             $('#msg'+msgID).fadeIn();
             playmessagesSound();
+            _btn2 = 0;
         }else{
             clearInterval(_timer);
         }
@@ -255,7 +256,6 @@ $(function(){
                 $('#hb1Open,#btn3').show();
                 $('#hb1').hide();
                 TweenMax.to('#hb1',{scale:0.5, alpha:0});
-                _btn2 = 0;
                 setTimeout(function(){
                     $('#hongbao .circle').show();
                     $('#hongbao .hand').show();
