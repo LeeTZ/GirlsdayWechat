@@ -23,13 +23,6 @@ $(function(){
         motionObj["page"+(i+1)] = new TimelineMax();
     };
 
-    //修改微信用户信息
-    //$('#msg15 .mname').text(nickname);
-    //$('.cont').text(nickname+'邀请你加入了“亿万富豪”群聊，群聊参与人还有：滴滴CEO -程维、京东－刘强东、万科-王石、联想-柳传志、SOHO中国－潘石屹、全民老公-王思聪……');
-    //$('#msg15 .headimg>img').attr('src',headimgurl);
-    //wxDefault['desc'] = nickname+'邀请你加入群聊亿万富豪红包群，点击查看详情。'
-    //wxShare();
-
     //初始化音乐
     var _music;
     function intsound(){
@@ -115,7 +108,7 @@ $(function(){
         dist = 0;
         //dist = _space;
         clearInterval(_timer);
-        _timer = setInterval(setMS2,2000)
+        _timer = setInterval(setMS2,2500)
     }
 
     //播放消息声音
@@ -132,8 +125,8 @@ $(function(){
                 dist += -260+_space;
                 _DIST = dist;
             }else if(msgID>3){
-                TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':dist+0+'px'},ease:Linear.easeNone});
-                dist += -200;
+                TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':dist+50+'px'},ease:Linear.easeNone});
+                dist += -150;
                 _DIST = dist;   
             }
             if(msgID==8) receiveMoney();
@@ -148,8 +141,8 @@ $(function(){
 
     function setMS2(){
         console.log("Here");
-        if(msgID<=13){
-            if(msgID != 13){
+        if(msgID<=12){
+            if(msgID != 12){
                 dist += -40;
                 TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':_DIST+dist+'px'},ease:Linear.easeNone});
                 dist += -180;    
@@ -361,7 +354,7 @@ $(function(){
     }
 
     //打开CEO的红包
-    $('#redpick2, #msg13 .hand').on(touchstart, function(){
+    $('#redpick2, #msg12 .hand').on(touchstart, function(){
         $('.hongbao,#hb2').show();
 		_mz_wx_view (5);//打开CEO红包
 		_mz_wx_custom(4); 
