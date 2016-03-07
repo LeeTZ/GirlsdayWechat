@@ -105,7 +105,7 @@ $(function(){
         msgID=1;
         //dist = -150+_space;
         dist = -150;
-        _timer = setInterval(setMS1,2500)
+        _timer = setInterval(setMS1,4500)
     }
 
     //显示消息2
@@ -115,7 +115,7 @@ $(function(){
         dist = 0;
         //dist = _space;
         clearInterval(_timer);
-        _timer = setInterval(setMS2,2000)
+        _timer = setInterval(setMS2,3000)
     }
 
     //播放消息声音
