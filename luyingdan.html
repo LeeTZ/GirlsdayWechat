@@ -1,0 +1,171 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SY11好无聊小分队（24）</title>
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<script type="text/javascript" src="js/setviewport.js"></script>
+<script type="text/javascript" src="js/preloadjs-0.6.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/soundjs-0.6.0.min.js"></script>
+<script type="text/javascript" src="js/tweenmax.min.js"></script>
+<script type="text/javascript" src="js/jweixin-1.0.0.js"></script>
+<!--<script type="text/javascript" src="js/getnickname.js"></script>-->
+<script type="text/javascript" src="js/didi.base.js"></script>
+
+
+<script type="text/javascript" src="js/weixin2.js"></script>
+<script type="text/javascript" src="js/wx.1.0.js"></script>
+<script type="text/javascript" src="js/luyingdan.js"></script>
+</head>
+<body>
+
+<div class="main hide">
+    <div class="page" id="page">
+        <!--<div class="enterpage"></div>-->
+        <div class="longpage hide">
+            <div class="groupinfo radioBox"><div class="cont" style="color:white;">韬妈妈 邀请你加入了“SY11好无聊小分队”群聊，群聊参与人还有：大师兄、二师兄、歌王贾、秦导、二伦子、元老师、琐鹤、廉公子……</div></div>
+
+            <div id="msg1" class="massge hide" style="height: 160px;">
+                <div class="headimg"><img src="picture/xhc.jpg" /></div>
+                <div class="mname">琐鹤</div>
+                <div class="mcontent">
+                    <div class="mcla radioBox">美帝好没有意思，身边的人都好方，段子都没有观众了<img src="picture/bq3.png" style="position: absolute;margin: 0 0 0 11px;width: 34px;" /></div>
+                    <div class="jb"><img src="picture/pdj.png" /></div>
+                </div>
+            </div>
+
+            <div id="msg2" class="massge hide" style="height: 120px;">
+                <div class="headimg"><img src="picture/swq.jpg" /></div>
+                <div class="mname">史伟琦</div>
+                <div class="mcontent">
+                    <div class="mcla radioBox">想出去浪啊！</div>
+                    <div class="jb"><img src="picture/pdj.png" /></div>
+                </div>
+            </div>
+
+            <div id="msg3" class="massge hide" style="height: 180px;">
+                <div class="headimg"><img src="picture/lsy.jpg" /></div>
+                <div class="mname">刘诗雨</div>
+                <div class="mcontent">
+                    <div class="mcla radioBox">啊，猪皮！说好的美西小分队带我飞呢</div>
+                    <div class="jb"><img src="picture/pdj.png" /></div>
+                </div>
+            </div>
+
+            <div id="msg4" class="massge hide" style="height: 220px;">
+                <div class="headimg"><img src="picture/lhs.jpg" /></div>
+                <div class="mname">李海石</div>
+                <div class="mcontent">
+                    <div class="mcla radioBox">咦，你们不是有超级无敌美丽丹，居然还会无聊……</div>
+                    <div class="jb"><img src="picture/pdj.png" /></div>
+                </div>
+            </div>
+
+            <div id="msg5" class="massge hide" style="height: 140px;">
+                <div class="headimg"><img src="picture/wsl.jpg" /></div>
+                <div class="mname">二伦子</div>
+                <div class="mcontent">
+                    <div class="mcla radioBox">丹哥最近特别拼，根本见不到人</div>
+                    <div class="jb"><img src="picture/pdj.png" /></div>
+                </div>
+            </div>
+
+            <div id="msg6" class="massge hide" style="height: 140px;">
+                <div class="headimg"><img src="picture/qzh.jpg" /></div>
+                <div class="mname">要求匿名的某秦姓男子</div>
+                    <div class="mcontent">
+                    <div class="mcla radioBox">感觉下次见丹哥就瘦的有腿脖子了</div>
+                    <div class="jb"><img src="picture/pdj.png" /></div>
+                </div>
+            </div>
+
+            <div id="msg7" class="massge hide" style="height: 180px;">
+                <div class="headimg"><img  src="picture/ltz.jpg" /></div>
+                    <div class="mname">李铁峥</div>
+                    <div class="mcontent">
+                    <div class="mcla radioBox">wuli 丹丹，程序员只能帮你到这了</div>
+                    <div class="jb"><img src="picture/pdj.png" /></div>
+                </div>
+            </div>
+            <div id="msg8" class="massge hide shiwenredpick" style="height: 233px;">
+                <div class="headimg"><img src="picture/cgx.jpg" /></div>
+                <div class="mname">Cho Kyuhyun</div>
+                <div class="redpick" id="redpick1">
+                    <img src="picture/redpick_luyingdan.jpg" />
+                </div>
+                <img class="circle"  src="picture/circle.png" />
+                <img class="hand"  src="picture/hand.png" />
+            </div>
+          <div id="msg10" class="massge hide" style="height: 430px;">
+                <div class="headimg"><img src="picture/cgx.jpg" /></div>
+                    <div class="mname">Cho Kyuhyun</div>
+                    <div class="mcontent">
+                    <div class="mcla radioBox">（系统检索到当前使用的语言为韩语，已自动进行翻译）其实我也很早就开始关注到你了，或许我也没有足够的运气与你相遇相知，但却真的感谢你能够支持我这么多个岁月，其实我生命中的高潮低谷也都与你相伴，因此，你也会是我这辈子最骄傲的选择。希望你也会像我一样，即便经历大风大浪和挫折坎坷，也终会有自己最满意的选择，过上自己最希望的生活。<img src="picture/bq1.png" style="position: absolute;margin: 0 0 0 11px;width: 34px;" /></div>
+                    <div class="jb"><img src="picture/pdj.png" /></div>
+                </div>
+            </div>
+            <div id="msg11" class="massge hide" style="height: 262px;">
+                <div class="headimg"><img src="picture/tys.jpg" /></div>
+                <div class="mname">二师兄</div>
+                <div class="mcontent">
+                    <div><img src="picture/bq9.jpg" /></div>
+                </div>
+            </div>
+            <div id="msg12" class="massge hide" style="height: 220px;">
+                <div class="headimg"><img src="picture/cgx.jpg" /></div>
+                <div class="mname">Cho Kyuhyun</div>
+                <div class="mcontent">
+                    <div class="mcla radioBox">我要上飞机去巡演啦，就最后再把我们相遇的歌《七年间的爱》拿出来送给你吧，wuli 丹丹，期待与你再次相遇。</div>
+                    <div class="jb"><img src="picture/pdj.png" /></div>
+                </div>
+            </div>
+            <div id="msg13" class="massge hide shiwenredpick" style="height: 233px;">
+                <div class="headimg"><img src="picture/ltz.jpg" /></div>
+                <div class="mname">李铁峥</div>
+                <div class="redpick" id="redpick2">
+                    <img src="picture/redpick_final.jpg" />
+                </div>
+                <img class="circle"  src="picture/circle.png" />
+                <img class="hand"  src="picture/hand.png" />
+            </div>
+        </div>
+        <div id="chaticons">
+                <img id="chatpic" src="picture/di.jpg">
+            </div>
+    </div>
+
+    <div id="hongbao" class="hongbao hide">
+        <img id="hb1" class="hide" src="picture/hb1_luyingdan.jpg" />
+        <img id="hb2" class="hide" src="picture/hb2.jpg" />
+        <img id="hb1Open" class="hide" src="picture/hb1_open_luyingdan.jpg" />
+        <div id="btn1"></div>
+        <div id="btn2"></div>
+        <div id="btn3" class="hide"></div>
+        <img class="circle hide"  src="picture/circle.png" />
+        <img class="hand hide"  src="picture/hand.png" />
+    </div>
+
+    <div id="hbnull" class="hbnull hide">
+        <img id="null1" class="hide" src="picture/hb1_null_luyingdan.jpg" />
+        <img id="null2" class="hide" src="picture/final_luyingdan.jpg" />
+        <div id="btn4" class="hide"></div>
+        <div id="btn5" class="hide"></div>
+        <div class="sharepop hide"><img src="picture/sharepop.png" /></div>
+        <img class="circle hide"  src="picture/circle.png" />
+        <img class="hand hide"  src="picture/hand.png" />
+    </div>
+    
+</div>
+<script type="text/javascript">
+	_mwx=window._mwx||{};
+	_mwx.siteId=8000292;
+	//_mwx.openId=xxxxxxxxxxx; //OpenID为微信提供的用户唯一标识,需要开发者传入，如果没有OpenID，去掉该代码即可。
+	_mwx.debug=true;//代码调试阶段，加入此代码，正式上线之后去掉该代码
+</script>
+<div style="display:none">
+<script src="js/z_stat.php" language="JavaScript"></script>
+</div>
+</body>
+</html>
