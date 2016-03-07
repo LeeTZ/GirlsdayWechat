@@ -51,6 +51,10 @@ html,body {
 /*马云红包提示*/
 #msg6 .circle{position: absolute; margin: 122px 0 0 363px; animation: shan 1.2s infinite; -webkit-animation: shan 1.2s infinite;}
 #msg6 .hand{position: absolute; margin: 136px 0 0 359px;}
+
+.shiwenredpick .circle{position: absolute; margin: 122px 0 0 363px; animation: shan 1.2s infinite; -webkit-animation: shan 1.2s infinite;}
+.shiwenredpick .hand{position: absolute; margin: 136px 0 0 359px;}
+
 /*滴滴CEO*/
 #msg19 .circle{position: absolute; margin: 122px 0 0 363px; animation: shan 1.2s infinite; -webkit-animation: shan 1.2s infinite;}
 #msg19 .hand{position: absolute; margin: 136px 0 0 359px;}
@@ -79,6 +83,7 @@ html,body {
 #hb2{ transform: scale(0.5); -webkit-transform: scale(0.5); opacity: 0;}
 /*#hb1Open{ transform: scale(0.5); -webkit-transform: scale(0.5); opacity: 0;}*/
 
+#chaticons{position:absolute; top:92%; z-index: 999;}
 
 #btn1 { width:100px;height: 100px;margin:-413px 0 0 -290px; }
 #btn2 { width:180px;height: 180px;margin:72px 0 0 -90px; }
