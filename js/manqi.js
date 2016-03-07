@@ -105,7 +105,7 @@ $(function(){
         msgID=1;
         //dist = -150+_space;
         dist = -150;
-        _timer = setInterval(setMS1,2500)
+        _timer = setInterval(setMS1,2000)
     }
 
     //显示消息2
@@ -133,7 +133,7 @@ $(function(){
                 _DIST = dist;
             }else if(msgID>4){
                 TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':dist+50+'px'},ease:Linear.easeNone});
-                dist += -150;
+                dist += -300;
                 _DIST = dist;   
             }
             if(msgID==8) receiveMoney();
@@ -148,8 +148,8 @@ $(function(){
 
     function setMS2(){
         console.log("Here");
-        if(msgID<=12){
-            if(msgID != 12){
+        if(msgID<=13){
+            if(msgID != 13){
                 dist += -40;
                 TweenMax.to($(".longpage>div").not($('.di')),.5, {css:{'top':_DIST+dist+'px'},ease:Linear.easeNone});
                 dist += -180;    
@@ -361,7 +361,7 @@ $(function(){
     }
 
     //打开CEO的红包
-    $('#redpick2, #msg12 .hand').on(touchstart, function(){
+    $('#redpick2, #msg13 .hand').on(touchstart, function(){
         $('.hongbao,#hb2').show();
 		_mz_wx_view (5);//打开CEO红包
 		_mz_wx_custom(4); 
